@@ -1,6 +1,6 @@
 # Phoenix-XM
 
-Phoenix-XM is an open-source educational and experimental GPU architecture built entirely in SystemVerilog. 
+Phoenix-XM is an open-source educational and experimental GPU architecture built entirely in SystemVerilog. (shortly: GPU from scratch !)
 
 It is designed to be a modular, configurable, and thoroughly documented foundation for exploring modern GPU concepts, focusing on learning and research rather than competing directly with commercial accelerators.
 
