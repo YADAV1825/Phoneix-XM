@@ -1,0 +1,1326 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/home/rohit/Coding/GPU'
+mkdir -p sim_build
+/usr/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s phoenix_gpu -g2012 -g2012 -s tb_dump -f sim_build/cmds.f -s cocotb_iverilog_dump  /home/rohit/Coding/GPU/test/helpers/tb_dump.sv /home/rohit/Coding/GPU/rtl/pkg/phoenix_pkg.sv /home/rohit/Coding/GPU/rtl/cache/phoenix_l1_dcache.sv /home/rohit/Coding/GPU/rtl/cache/phoenix_l1_icache.sv /home/rohit/Coding/GPU/rtl/cache/phoenix_l2_cache.sv /home/rohit/Coding/GPU/rtl/fabric/phoenix_fabric.sv /home/rohit/Coding/GPU/rtl/fabric/phoenix_fabric_router.sv /home/rohit/Coding/GPU/rtl/memory/phoenix_mem_controller.sv /home/rohit/Coding/GPU/rtl/memory/phoenix_global_mem.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_alu.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_sfu.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_decode.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_fetch.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_regfile.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_shared_mem.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_tensor_core.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv /home/rohit/Coding/GPU/rtl/tile/phoenix_dispatcher.sv /home/rohit/Coding/GPU/rtl/tile/phoenix_tile_crossbar.sv /home/rohit/Coding/GPU/rtl/tile/phoenix_tile.sv /home/rohit/Coding/GPU/rtl/phoenix_global_scheduler.sv /home/rohit/Coding/GPU/rtl/phoenix_gpu.sv sim_build/cocotb_iverilog_dump.v
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/tile/phoenix_dispatcher.sv:78: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/tile/phoenix_dispatcher.sv:78: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+rm -f results.xml
+MODULE=test.kernels.test_matmul_looped TESTCASE= TOPLEVEL=phoenix_gpu TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /home/rohit/.pyenv/versions/3.10.11/lib/python3.10/site-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst 
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /home/rohit/.pyenv/versions/3.10.11/lib/python3.10/site-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1783251225
+     0.00ns INFO     cocotb.regression                  Found test test.kernels.test_matmul_looped.test_matmul_looped
+     0.00ns INFO     cocotb.regression                  running test_matmul_looped (1/1)
+                                                          Benchmark: Looped 2x2 MatMul (apples-to-apples with tiny-gpu looped)
+FST info: dumpfile dump.vcd opened for output.
+FST warning: sim_build/cocotb_iverilog_dump.v:3: $dumpfile called after $dumpvars started,
+                                                 using existing file (dump.vcd).
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.dispatcher.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.dispatcher.$ivl_for_loop34.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.dispatcher.$ivl_for_loop35.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop39.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop40.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop41.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop42.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring sig   106.00ns INFO     cocotb.phoenix_gpu                 Cycle 1: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+   108.00ns INFO     cocotb.phoenix_gpu                 Cycle 2: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+   110.00ns INFO     cocotb.phoenix_gpu                 Cycle 3: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   112.00ns INFO     cocotb.phoenix_gpu                 Cycle 4: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   114.00ns INFO     cocotb.phoenix_gpu                 Cycle 5: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   116.00ns INFO     cocotb.phoenix_gpu                 Cycle 6: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   118.00ns INFO     cocotb.phoenix_gpu                 Cycle 7: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   120.00ns INFO     cocotb.phoenix_gpu                 Cycle 8: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   122.00ns INFO     cocotb.phoenix_gpu                 Cycle 9: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   124.00ns INFO     cocotb.phoenix_gpu                 Cycle 10: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   126.00ns INFO     cocotb.phoenix_gpu                 Cycle 11: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   128.00ns INFO     cocotb.phoenix_gpu                 Cycle 12: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   130.00ns INFO     cocotb.phoenix_gpu                 Cycle 13: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   132.00ns INFO     cocotb.phoenix_gpu                 Cycle 14: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   134.00ns INFO     cocotb.phoenix_gpu                 Cycle 15: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   136.00ns INFO     cocotb.phoenix_gpu                 Cycle 16: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   138.00ns INFO     cocotb.phoenix_gpu                 Cycle 17: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   140.00ns INFO     cocotb.phoenix_gpu                 Cycle 18: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   142.00ns INFO     cocotb.phoenix_gpu                 Cycle 19: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   144.00ns INFO     cocotb.phoenix_gpu                 Cycle 20: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   146.00ns INFO     cocotb.phoenix_gpu                 Cycle 21: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   148.00ns INFO     cocotb.phoenix_gpu                 Cycle 22: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   150.00ns INFO     cocotb.phoenix_gpu                 Cycle 23: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   152.00ns INFO     cocotb.phoenix_gpu                 Cycle 24: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   154.00ns INFO     cocotb.phoenix_gpu                 Cycle 25: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   156.00ns INFO     cocotb.phoenix_gpu                 Cycle 26: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   158.00ns INFO     cocotb.phoenix_gpu                 Cycle 27: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   160.00ns INFO     cocotb.phoenix_gpu                 Cycle 28: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   162.00ns INFO     cocotb.phoenix_gpu                 Cycle 29: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   164.00ns INFO     cocotb.phoenix_gpu                 Cycle 30: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   166.00ns INFO     cocotb.phoenix_gpu                 Cycle 31: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   168.00ns INFO     cocotb.phoenix_gpu                 Cycle 32: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   170.00ns INFO     cocotb.phoenix_gpu                 Cycle 33: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   172.00ns INFO     cocotb.phoenix_gpu                 Cycle 34: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   174.00ns INFO     cocotb.phoenix_gpu                 Cycle 35: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   176.00ns INFO     cocotb.phoenix_gpu                 Cycle 36: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   178.00ns INFO     cocotb.phoenix_gpu                 Cycle 37: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   180.00ns INFO     cocotb.phoenix_gpu                 Cycle 38: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   182.00ns INFO     cocotb.phoenix_gpu                 Cycle 39: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   184.00ns INFO     cocotb.phoenix_gpu                 Cycle 40: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   186.00ns INFO     cocotb.phoenix_gpu                 Cycle 41: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   188.00ns INFO     cocotb.phoenix_gpu                 Cycle 42: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   190.00ns INFO     cocotb.phoenix_gpu                 Cycle 43: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   192.00ns INFO     cocotb.phoenix_gpu                 Cycle 44: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   194.00ns INFO     cocotb.phoenix_gpu                 Cycle 45: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   196.00ns INFO     cocotb.phoenix_gpu                 Cycle 46: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   198.00ns INFO     cocotb.phoenix_gpu                 Cycle 47: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   200.00ns INFO     cocotb.phoenix_gpu                 Cycle 48: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   202.00ns INFO     cocotb.phoenix_gpu                 Cycle 49: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   204.00ns INFO     cocotb.phoenix_gpu                 Cycle 50: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   206.00ns INFO     cocotb.phoenix_gpu                 Cycle 51: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   208.00ns INFO     cocotb.phoenix_gpu                 Cycle 52: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   210.00ns INFO     cocotb.phoenix_gpu                 Cycle 53: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   212.00ns INFO     cocotb.phoenix_gpu                 Cycle 54: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   214.00ns INFO     cocotb.phoenix_gpu                 Cycle 55: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   216.00ns INFO     cocotb.phoenix_gpu                 Cycle 56: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   218.00ns INFO     cocotb.phoenix_gpu                 Cycle 57: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   220.00ns INFO     cocotb.phoenix_gpu                 Cycle 58: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   222.00ns INFO     cocotb.phoenix_gpu                 Cycle 59: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   224.00ns INFO     cocotb.phoenix_gpu                 Cycle 60: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   226.00ns INFO     cocotb.phoenix_gpu                 Cycle 61: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   228.00ns INFO     cocotb.phoenix_gpu                 Cycle 62: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   230.00ns INFO     cocotb.phoenix_gpu                 Cycle 63: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   232.00ns INFO     cocotb.phoenix_gpu                 Cycle 64: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   234.00ns INFO     cocotb.phoenix_gpu                 Cycle 65: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   236.00ns INFO     cocotb.phoenix_gpu                 Cycle 66: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   238.00ns INFO     cocotb.phoenix_gpu                 Cycle 67: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   240.00ns INFO     cocotb.phoenix_gpu                 Cycle 68: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   242.00ns INFO     cocotb.phoenix_gpu                 Cycle 69: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   244.00ns INFO     cocotb.phoenix_gpu                 Cycle 70: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   246.00ns INFO     cocotb.phoenix_gpu                 Cycle 71: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   248.00ns INFO     cocotb.phoenix_gpu                 Cycle 72: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   250.00ns INFO     cocotb.phoenix_gpu                 Cycle 73: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   252.00ns INFO     cocotb.phoenix_gpu                 Cycle 74: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   254.00ns INFO     cocotb.phoenix_gpu                 Cycle 75: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   256.00ns INFO     cocotb.phoenix_gpu                 Cycle 76: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   258.00ns INFO     cocotb.phoenix_gpu                 Cycle 77: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   260.00ns INFO     cocotb.phoenix_gpu                 Cycle 78: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   262.00ns INFO     cocotb.phoenix_gpu                 Cycle 79: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   264.00ns INFO     cocotb.phoenix_gpu                 Cycle 80: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   266.00ns INFO     cocotb.phoenix_gpu                 Cycle 81: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   268.00ns INFO     cocotb.phoenix_gpu                 Cycle 82: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   270.00ns INFO     cocotb.phoenix_gpu                 Cycle 83: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   272.00ns INFO     cocotb.phoenix_gpu                 Cycle 84: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   274.00ns INFO     cocotb.phoenix_gpu                 Cycle 85: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   276.00ns INFO     cocotb.phoenix_gpu                 Cycle 86: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   278.00ns INFO     cocotb.phoenix_gpu                 Cycle 87: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   280.00ns INFO     cocotb.phoenix_gpu                 Cycle 88: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   282.00ns INFO     cocotb.phoenix_gpu                 Cycle 89: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   284.00ns INFO     cocotb.phoenix_gpu                 Cycle 90: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   286.00ns INFO     cocotb.phoenix_gpu                 Cycle 91: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   288.00ns INFO     cocotb.phoenix_gpu                 Cycle 92: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   290.00ns INFO     cocotb.phoenix_gpu                 Cycle 93: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   292.00ns INFO     cocotb.phoenix_gpu                 Cycle 94: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   294.00ns INFO     cocotb.phoenix_gpu                 Cycle 95: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   296.00ns INFO     cocotb.phoenix_gpu                 Cycle 96: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   298.00ns INFO     cocotb.phoenix_gpu                 Cycle 97: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   300.00ns INFO     cocotb.phoenix_gpu                 Cycle 98: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   302.00ns INFO     cocotb.phoenix_gpu                 Cycle 99: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   304.00ns INFO     cocotb.phoenix_gpu                 Cycle 100: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   306.00ns INFO     cocotb.phoenix_gpu                 Cycle 101: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   308.00ns INFO     cocotb.phoenix_gpu                 Cycle 102: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   310.00ns INFO     cocotb.phoenix_gpu                 Cycle 103: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   312.00ns INFO     cocotb.phoenix_gpu                 Cycle 104: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   314.00ns INFO     cocotb.phoenix_gpu                 Cycle 105: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   316.00ns INFO     cocotb.phoenix_gpu                 Cycle 106: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   318.00ns INFO     cocotb.phoenix_gpu                 Cycle 107: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   320.00ns INFO     cocotb.phoenix_gpu                 Cycle 108: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   322.00ns INFO     cocotb.phoenix_gpu                 Cycle 109: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   324.00ns INFO     cocotb.phoenix_gpu                 Cycle 110: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   326.00ns INFO     cocotb.phoenix_gpu                 Cycle 111: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   328.00ns INFO     cocotb.phoenix_gpu                 Cycle 112: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   330.00ns INFO     cocotb.phoenix_gpu                 Cycle 113: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   332.00ns INFO     cocotb.phoenix_gpu                 Cycle 114: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   334.00ns INFO     cocotb.phoenix_gpu                 Cycle 115: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   336.00ns INFO     cocotb.phoenix_gpu                 Cycle 116: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   338.00ns INFO     cocotb.phoenix_gpu                 Cycle 117: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   340.00ns INFO     cocotb.phoenix_gpu                 Cycle 118: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   342.00ns INFO     cocotb.phoenix_gpu                 Cycle 119: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   344.00ns INFO     cocotb.phoenix_gpu                 Cycle 120: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   346.00ns INFO     cocotb.phoenix_gpu                 Cycle 121: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   348.00ns INFO     cocotb.phoenix_gpu                 Cycle 122: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   350.00ns INFO     cocotb.phoenix_gpu                 Cycle 123: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   352.00ns INFO     cocotb.phoenix_gpu                 Cycle 124: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   354.00ns INFO     cocotb.phoenix_gpu                 Cycle 125: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   356.00ns INFO     cocotb.phoenix_gpu                 Cycle 126: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   358.00ns INFO     cocotb.phoenix_gpu                 Cycle 127: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   360.00ns INFO     cocotb.phoenix_gpu                 Cycle 128: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   362.00ns INFO     cocotb.phoenix_gpu                 Cycle 129: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   364.00ns INFO     cocotb.phoenix_gpu                 Cycle 130: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   366.00ns INFO     cocotb.phoenix_gpu                 Cycle 131: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   368.00ns INFO     cocotb.phoenix_gpu                 Cycle 132: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   370.00ns INFO     cocotb.phoenix_gpu                 Cycle 133: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   372.00ns INFO     cocotb.phoenix_gpu                 Cycle 134: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   374.00ns INFO     cocotb.phoenix_gpu                 Cycle 135: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   376.00ns INFO     cocotb.phoenix_gpu                 Cycle 136: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   378.00ns INFO     cocotb.phoenix_gpu                 Cycle 137: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   380.00ns INFO     cocotb.phoenix_gpu                 Cycle 138: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   382.00ns INFO     cocotb.phoenix_gpu                 Cycle 139: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   384.00ns INFO     cocotb.phoenix_gpu                 Cycle 140: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   386.00ns INFO     cocotb.phoenix_gpu                 Cycle 141: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   388.00ns INFO     cocotb.phoenix_gpu                 Cycle 142: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   390.00ns INFO     cocotb.phoenix_gpu                 Cycle 143: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   392.00ns INFO     cocotb.phoenix_gpu                 Cycle 144: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   394.00ns INFO     cocotb.phoenix_gpu                 Cycle 145: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   396.00ns INFO     cocotb.phoenix_gpu                 Cycle 146: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   398.00ns INFO     cocotb.phoenix_gpu                 Cycle 147: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   400.00ns INFO     cocotb.phoenix_gpu                 Cycle 148: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   402.00ns INFO     cocotb.phoenix_gpu                 Cycle 149: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   404.00ns INFO     cocotb.phoenix_gpu                 Cycle 150: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   406.00ns INFO     cocotb.phoenix_gpu                 Cycle 151: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   408.00ns INFO     cocotb.phoenix_gpu                 Cycle 152: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   410.00ns INFO     cocotb.phoenix_gpu                 Cycle 153: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   412.00ns INFO     cocotb.phoenix_gpu                 Cycle 154: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   414.00ns INFO     cocotb.phoenix_gpu                 Cycle 155: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   416.00ns INFO     cocotb.phoenix_gpu                 Cycle 156: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   418.00ns INFO     cocotb.phoenix_gpu                 Cycle 157: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   420.00ns INFO     cocotb.phoenix_gpu                 Cycle 158: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   422.00ns INFO     cocotb.phoenix_gpu                 Cycle 159: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   424.00ns INFO     cocotb.phoenix_gpu                 Cycle 160: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   426.00ns INFO     cocotb.phoenix_gpu                 Cycle 161: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   428.00ns INFO     cocotb.phoenix_gpu                 Cycle 162: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   430.00ns INFO     cocotb.phoenix_gpu                 Cycle 163: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   432.00ns INFO     cocotb.phoenix_gpu                 Cycle 164: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   434.00ns INFO     cocotb.phoenix_gpu                 Cycle 165: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   436.00ns INFO     cocotb.phoenix_gpu                 Cycle 166: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   438.00ns INFO     cocotb.phoenix_gpu                 Cycle 167: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   440.00ns INFO     cocotb.phoenix_gpu                 Cycle 168: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   442.00ns INFO     cocotb.phoenix_gpu                 Cycle 169: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   444.00ns INFO     cocotb.phoenix_gpu                 Cycle 170: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   446.00ns INFO     cocotb.phoenix_gpu                 Cycle 171: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   448.00ns INFO     cocotb.phoenix_gpu                 Cycle 172: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   450.00ns INFO     cocotb.phoenix_gpu                 Cycle 173: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   452.00ns INFO     cocotb.phoenix_gpu                 Cycle 174: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   454.00ns INFO     cocotb.phoenix_gpu                 Cycle 175: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   456.00ns INFO     cocotb.phoenix_gpu                 Cycle 176: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   458.00ns INFO     cocotb.phoenix_gpu                 Cycle 177: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   460.00ns INFO     cocotb.phoenix_gpu                 Cycle 178: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   462.00ns INFO     cocotb.phoenix_gpu                 Cycle 179: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   464.00ns INFO     cocotb.phoenix_gpu                 Cycle 180: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   466.00ns INFO     cocotb.phoenix_gpu                 Cycle 181: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   468.00ns INFO     cocotb.phoenix_gpu                 Cycle 182: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   470.00ns INFO     cocotb.phoenix_gpu                 Cycle 183: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   472.00ns INFO     cocotb.phoenix_gpu                 Cycle 184: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   474.00ns INFO     cocotb.phoenix_gpu                 Cycle 185: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   476.00ns INFO     cocotb.phoenix_gpu                 Cycle 186: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   478.00ns INFO     cocotb.phoenix_gpu                 Cycle 187: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   480.00ns INFO     cocotb.phoenix_gpu                 Cycle 188: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   482.00ns INFO     cocotb.phoenix_gpu                 Cycle 189: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   484.00ns INFO     cocotb.phoenix_gpu                 Cycle 190: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   486.00ns INFO     cocotb.phoenix_gpu                 Cycle 191: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   488.00ns INFO     cocotb.phoenix_gpu                 Cycle 192: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   490.00ns INFO     cocotb.phoenix_gpu                 Cycle 193: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   492.00ns INFO     cocotb.phoenix_gpu                 Cycle 194: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   494.00ns INFO     cocotb.phoenix_gpu                 Cycle 195: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   496.00ns INFO     cocotb.phoenix_gpu                 Cycle 196: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   498.00ns INFO     cocotb.phoenix_gpu                 Cycle 197: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   500.00ns INFO     cocotb.phoenix_gpu                 Cycle 198: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   502.00ns INFO     cocotb.phoenix_gpu                 Cycle 199: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   504.00ns INFO     cocotb.phoenix_gpu                 Cycle 200: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   506.00ns INFO     cocotb.phoenix_gpu                 Cycle 201: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   508.00ns INFO     cocotb.phoenix_gpu                 Cycle 202: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   510.00ns INFO     cocotb.phoenix_gpu                 Cycle 203: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   512.00ns INFO     cocotb.phoenix_gpu                 Cycle 204: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   514.00ns INFO     cocotb.phoenix_gpu                 Cycle 205: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   516.00ns INFO     cocotb.phoenix_gpu                 Cycle 206: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   518.00ns INFO     cocotb.phoenix_gpu                 Cycle 207: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   520.00ns INFO     cocotb.phoenix_gpu                 Cycle 208: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   522.00ns INFO     cocotb.phoenix_gpu                 Cycle 209: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   524.00ns INFO     cocotb.phoenix_gpu                 Cycle 210: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   526.00ns INFO     cocotb.phoenix_gpu                 Cycle 211: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   528.00ns INFO     cocotb.phoenix_gpu                 Cycle 212: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   530.00ns INFO     cocotb.phoenix_gpu                 Cycle 213: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   532.00ns INFO     cocotb.phoenix_gpu                 Cycle 214: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   534.00ns INFO     cocotb.phoenix_gpu                 Cycle 215: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   536.00ns INFO     cocotb.phoenix_gpu                 Cycle 216: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   538.00ns INFO     cocotb.phoenix_gpu                 Cycle 217: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   540.00ns INFO     cocotb.phoenix_gpu                 Cycle 218: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   542.00ns INFO     cocotb.phoenix_gpu                 Cycle 219: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   544.00ns INFO     cocotb.phoenix_gpu                 Cycle 220: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   546.00ns INFO     cocotb.phoenix_gpu                 Cycle 221: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   548.00ns INFO     cocotb.phoenix_gpu                 Cycle 222: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   550.00ns INFO     cocotb.phoenix_gpu                 Cycle 223: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   552.00ns INFO     cocotb.phoenix_gpu                 Cycle 224: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   554.00ns INFO     cocotb.phoenix_gpu                 Cycle 225: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   556.00ns INFO     cocotb.phoenix_gpu                 Cycle 226: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   558.00ns INFO     cocotb.phoenix_gpu                 Cycle 227: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   560.00ns INFO     cocotb.phoenix_gpu                 Cycle 228: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   562.00ns INFO     cocotb.phoenix_gpu                 Cycle 229: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   564.00ns INFO     cocotb.phoenix_gpu                 Cycle 230: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   566.00ns INFO     cocotb.phoenix_gpu                 Cycle 231: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   568.00ns INFO     cocotb.phoenix_gpu                 Cycle 232: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   570.00ns INFO     cocotb.phoenix_gpu                 Cycle 233: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   572.00ns INFO     cocotb.phoenix_gpu                 Cycle 234: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   574.00ns INFO     cocotb.phoenix_gpu                 Cycle 235: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   576.00ns INFO     cocotb.phoenix_gpu                 Cycle 236: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   578.00ns INFO     cocotb.phoenix_gpu                 Cycle 237: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   580.00ns INFO     cocotb.phoenix_gpu                 Cycle 238: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   582.00ns INFO     cocotb.phoenix_gpu                 Cycle 239: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   584.00ns INFO     cocotb.phoenix_gpu                 Cycle 240: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   586.00ns INFO     cocotb.phoenix_gpu                 Cycle 241: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   588.00ns INFO     cocotb.phoenix_gpu                 Cycle 242: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   590.00ns INFO     cocotb.phoenix_gpu                 Cycle 243: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   592.00ns INFO     cocotb.phoenix_gpu                 Cycle 244: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   594.00ns INFO     cocotb.phoenix_gpu                 Cycle 245: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   596.00ns INFO     cocotb.phoenix_gpu                 Cycle 246: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   598.00ns INFO     cocotb.phoenix_gpu                 Cycle 247: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   600.00ns INFO     cocotb.phoenix_gpu                 Cycle 248: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   602.00ns INFO     cocotb.phoenix_gpu                 Cycle 249: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   604.00ns INFO     cocotb.phoenix_gpu                 Cycle 250: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   606.00ns INFO     cocotb.phoenix_gpu                 Cycle 251: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   608.00ns INFO     cocotb.phoenix_gpu                 Cycle 252: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   610.00ns INFO     cocotb.phoenix_gpu                 Cycle 253: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   612.00ns INFO     cocotb.phoenix_gpu                 Cycle 254: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   614.00ns INFO     cocotb.phoenix_gpu                 Cycle 255: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   616.00ns INFO     cocotb.phoenix_gpu                 Cycle 256: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   618.00ns INFO     cocotb.phoenix_gpu                 Cycle 257: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   620.00ns INFO     cocotb.phoenix_gpu                 Cycle 258: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   622.00ns INFO     cocotb.phoenix_gpu                 Cycle 259: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   624.00ns INFO     cocotb.phoenix_gpu                 Cycle 260: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   626.00ns INFO     cocotb.phoenix_gpu                 Cycle 261: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   628.00ns INFO     cocotb.phoenix_gpu                 Cycle 262: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   630.00ns INFO     cocotb.phoenix_gpu                 Cycle 263: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   632.00ns INFO     cocotb.phoenix_gpu                 Cycle 264: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   634.00ns INFO     cocotb.phoenix_gpu                 Cycle 265: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   636.00ns INFO     cocotb.phoenix_gpu                 Cycle 266: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   638.00ns INFO     cocotb.phoenix_gpu                 Cycle 267: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   640.00ns INFO     cocotb.phoenix_gpu                 Cycle 268: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   642.00ns INFO     cocotb.phoenix_gpu                 Cycle 269: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   644.00ns INFO     cocotb.phoenix_gpu                 Cycle 270: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   646.00ns INFO     cocotb.phoenix_gpu                 Cycle 271: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   648.00ns INFO     cocotb.phoenix_gpu                 Cycle 272: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   650.00ns INFO     cocotb.phoenix_gpu                 Cycle 273: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   652.00ns INFO     cocotb.phoenix_gpu                 Cycle 274: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   654.00ns INFO     cocotb.phoenix_gpu                 Cycle 275: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   656.00ns INFO     cocotb.phoenix_gpu                 Cycle 276: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   658.00ns INFO     cocotb.phoenix_gpu                 Cycle 277: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   660.00ns INFO     cocotb.phoenix_gpu                 Cycle 278: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   662.00ns INFO     cocotb.phoenix_gpu                 Cycle 279: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   664.00ns INFO     cocotb.phoenix_gpu                 Cycle 280: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   666.00ns INFO     cocotb.phoenix_gpu                 Cycle 281: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   668.00ns INFO     cocotb.phoenix_gpu                 Cycle 282: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   670.00ns INFO     cocotb.phoenix_gpu                 Cycle 283: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   672.00ns INFO     cocotb.phoenix_gpu                 Cycle 284: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   674.00ns INFO     cocotb.phoenix_gpu                 Cycle 285: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   676.00ns INFO     cocotb.phoenix_gpu                 Cycle 286: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   678.00ns INFO     cocotb.phoenix_gpu                 Cycle 287: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   680.00ns INFO     cocotb.phoenix_gpu                 Cycle 288: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   682.00ns INFO     cocotb.phoenix_gpu                 Cycle 289: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   684.00ns INFO     cocotb.phoenix_gpu                 Cycle 290: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   686.00ns INFO     cocotb.phoenix_gpu                 Cycle 291: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   688.00ns INFO     cocotb.phoenix_gpu                 Cycle 292: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   690.00ns INFO     cocotb.phoenix_gpu                 Cycle 293: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   692.00ns INFO     cocotb.phoenix_gpu                 Cycle 294: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   694.00ns INFO     cocotb.phoenix_gpu                 Cycle 295: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   696.00ns INFO     cocotb.phoenix_gpu                 Cycle 296: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   698.00ns INFO     cocotb.phoenix_gpu                 Cycle 297: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   700.00ns INFO     cocotb.phoenix_gpu                 Cycle 298: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   702.00ns INFO     cocotb.phoenix_gpu                 Cycle 299: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   704.00ns INFO     cocotb.phoenix_gpu                 Cycle 300: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   706.00ns INFO     cocotb.phoenix_gpu                 Cycle 301: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   708.00ns INFO     cocotb.phoenix_gpu                 Cycle 302: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   710.00ns INFO     cocotb.phoenix_gpu                 Cycle 303: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   712.00ns INFO     cocotb.phoenix_gpu                 Cycle 304: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   714.00ns INFO     cocotb.phoenix_gpu                 Cycle 305: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   716.00ns INFO     cocotb.phoenix_gpu                 Cycle 306: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   718.00ns INFO     cocotb.phoenix_gpu                 Cycle 307: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   720.00ns INFO     cocotb.phoenix_gpu                 Cycle 308: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   722.00ns INFO     cocotb.phoenix_gpu                 Cycle 309: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   724.00ns INFO     cocotb.phoenix_gpu                 Cycle 310: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   726.00ns INFO     cocotb.phoenix_gpu                 Cycle 311: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   728.00ns INFO     cocotb.phoenix_gpu                 Cycle 312: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   730.00ns INFO     cocotb.phoenix_gpu                 Cycle 313: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   732.00ns INFO     cocotb.phoenix_gpu                 Cycle 314: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   734.00ns INFO     cocotb.phoenix_gpu                 Cycle 315: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   736.00ns INFO     cocotb.phoenix_gpu                 Cycle 316: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   738.00ns INFO     cocotb.phoenix_gpu                 Cycle 317: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   740.00ns INFO     cocotb.phoenix_gpu                 Cycle 318: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   742.00ns INFO     cocotb.phoenix_gpu                 Cycle 319: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   744.00ns INFO     cocotb.phoenix_gpu                 Cycle 320: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   746.00ns INFO     cocotb.phoenix_gpu                 Cycle 321: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   748.00ns INFO     cocotb.phoenix_gpu                 Cycle 322: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   750.00ns INFO     cocotb.phoenix_gpu                 Cycle 323: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   752.00ns INFO     cocotb.phoenix_gpu                 Cycle 324: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   754.00ns INFO     cocotb.phoenix_gpu                 Cycle 325: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   756.00ns INFO     cocotb.phoenix_gpu                 Cycle 326: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   758.00ns INFO     cocotb.phoenix_gpu                 Cycle 327: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   760.00ns INFO     cocotb.phoenix_gpu                 Cycle 328: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   762.00ns INFO     cocotb.phoenix_gpu                 Cycle 329: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   764.00ns INFO     cocotb.phoenix_gpu                 Cycle 330: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   766.00ns INFO     cocotb.phoenix_gpu                 Cycle 331: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   768.00ns INFO     cocotb.phoenix_gpu                 Cycle 332: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   770.00ns INFO     cocotb.phoenix_gpu                 Cycle 333: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   772.00ns INFO     cocotb.phoenix_gpu                 Cycle 334: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   774.00ns INFO     cocotb.phoenix_gpu                 Cycle 335: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   776.00ns INFO     cocotb.phoenix_gpu                 Cycle 336: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   778.00ns INFO     cocotb.phoenix_gpu                 Cycle 337: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   780.00ns INFO     cocotb.phoenix_gpu                 Cycle 338: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   782.00ns INFO     cocotb.phoenix_gpu                 Cycle 339: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   784.00ns INFO     cocotb.phoenix_gpu                 Cycle 340: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   786.00ns INFO     cocotb.phoenix_gpu                 Cycle 341: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   788.00ns INFO     cocotb.phoenix_gpu                 Cycle 342: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   790.00ns INFO     cocotb.phoenix_gpu                 Cycle 343: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   792.00ns INFO     cocotb.phoenix_gpu                 Cycle 344: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   794.00ns INFO     cocotb.phoenix_gpu                 Cycle 345: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   796.00ns INFO     cocotb.phoenix_gpu                 Cycle 346: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   798.00ns INFO     cocotb.phoenix_gpu                 Cycle 347: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   800.00ns INFO     cocotb.phoenix_gpu                 Cycle 348: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   802.00ns INFO     cocotb.phoenix_gpu                 Cycle 349: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   804.00ns INFO     cocotb.phoenix_gpu                 Cycle 350: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   806.00ns INFO     cocotb.phoenix_gpu                 Cycle 351: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   808.00ns INFO     cocotb.phoenix_gpu                 Cycle 352: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   810.00ns INFO     cocotb.phoenix_gpu                 Cycle 353: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   812.00ns INFO     cocotb.phoenix_gpu                 Cycle 354: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   814.00ns INFO     cocotb.phoenix_gpu                 Cycle 355: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   816.00ns INFO     cocotb.phoenix_gpu                 Cycle 356: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   818.00ns INFO     cocotb.phoenix_gpu                 Cycle 357: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   820.00ns INFO     cocotb.phoenix_gpu                 Cycle 358: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   822.00ns INFO     cocotb.phoenix_gpu                 Cycle 359: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   824.00ns INFO     cocotb.phoenix_gpu                 Cycle 360: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   826.00ns INFO     cocotb.phoenix_gpu                 Cycle 361: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   828.00ns INFO     cocotb.phoenix_gpu                 Cycle 362: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   830.00ns INFO     cocotb.phoenix_gpu                 Cycle 363: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   832.00ns INFO     cocotb.phoenix_gpu                 Cycle 364: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   834.00ns INFO     cocotb.phoenix_gpu                 Cycle 365: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   836.00ns INFO     cocotb.phoenix_gpu                 Cycle 366: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   838.00ns INFO     cocotb.phoenix_gpu                 Cycle 367: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   840.00ns INFO     cocotb.phoenix_gpu                 Cycle 368: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   842.00ns INFO     cocotb.phoenix_gpu                 Cycle 369: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   844.00ns INFO     cocotb.phoenix_gpu                 Cycle 370: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   846.00ns INFO     cocotb.phoenix_gpu                 Cycle 371: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   848.00ns INFO     cocotb.phoenix_gpu                 Cycle 372: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   850.00ns INFO     cocotb.phoenix_gpu                 Cycle 373: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   852.00ns INFO     cocotb.phoenix_gpu                 Cycle 374: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   854.00ns INFO     cocotb.phoenix_gpu                 Cycle 375: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   856.00ns INFO     cocotb.phoenix_gpu                 Cycle 376: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   858.00ns INFO     cocotb.phoenix_gpu                 Cycle 377: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   860.00ns INFO     cocotb.phoenix_gpu                 Cycle 378: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   862.00ns INFO     cocotb.phoenix_gpu                 Cycle 379: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   864.00ns INFO     cocotb.phoenix_gpu                 Cycle 380: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   866.00ns INFO     cocotb.phoenix_gpu                 Cycle 381: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   868.00ns INFO     cocotb.phoenix_gpu                 Cycle 382: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   870.00ns INFO     cocotb.phoenix_gpu                 Cycle 383: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   872.00ns INFO     cocotb.phoenix_gpu                 Cycle 384: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   874.00ns INFO     cocotb.phoenix_gpu                 Cycle 385: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   876.00ns INFO     cocotb.phoenix_gpu                 Cycle 386: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   878.00ns INFO     cocotb.phoenix_gpu                 Cycle 387: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   880.00ns INFO     cocotb.phoenix_gpu                 Cycle 388: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   882.00ns INFO     cocotb.phoenix_gpu                 Cycle 389: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   884.00ns INFO     cocotb.phoenix_gpu                 Cycle 390: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   886.00ns INFO     cocotb.phoenix_gpu                 Cycle 391: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   888.00ns INFO     cocotb.phoenix_gpu                 Cycle 392: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   890.00ns INFO     cocotb.phoenix_gpu                 Cycle 393: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   892.00ns INFO     cocotb.phoenix_gpu                 Cycle 394: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   894.00ns INFO     cocotb.phoenix_gpu                 Cycle 395: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   896.00ns INFO     cocotb.phoenix_gpu                 Cycle 396: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   898.00ns INFO     cocotb.phoenix_gpu                 Cycle 397: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   900.00ns INFO     cocotb.phoenix_gpu                 Cycle 398: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   902.00ns INFO     cocotb.phoenix_gpu                 Cycle 399: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   904.00ns INFO     cocotb.phoenix_gpu                 Cycle 400: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   906.00ns INFO     cocotb.phoenix_gpu                 Cycle 401: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   908.00ns INFO     cocotb.phoenix_gpu                 Cycle 402: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   910.00ns INFO     cocotb.phoenix_gpu                 Cycle 403: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   912.00ns INFO     cocotb.phoenix_gpu                 Cycle 404: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   914.00ns INFO     cocotb.phoenix_gpu                 Cycle 405: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   916.00ns INFO     cocotb.phoenix_gpu                 Cycle 406: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   918.00ns INFO     cocotb.phoenix_gpu                 Cycle 407: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   920.00ns INFO     cocotb.phoenix_gpu                 Cycle 408: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   922.00ns INFO     cocotb.phoenix_gpu                 Cycle 409: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   924.00ns INFO     cocotb.phoenix_gpu                 Cycle 410: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   926.00ns INFO     cocotb.phoenix_gpu                 Cycle 411: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   928.00ns INFO     cocotb.phoenix_gpu                 Cycle 412: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   930.00ns INFO     cocotb.phoenix_gpu                 Cycle 413: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   932.00ns INFO     cocotb.phoenix_gpu                 Cycle 414: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   934.00ns INFO     cocotb.phoenix_gpu                 Cycle 415: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   936.00ns INFO     cocotb.phoenix_gpu                 Cycle 416: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   938.00ns INFO     cocotb.phoenix_gpu                 Cycle 417: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   940.00ns INFO     cocotb.phoenix_gpu                 Cycle 418: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   942.00ns INFO     cocotb.phoenix_gpu                 Cycle 419: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   944.00ns INFO     cocotb.phoenix_gpu                 Cycle 420: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   946.00ns INFO     cocotb.phoenix_gpu                 Cycle 421: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   948.00ns INFO     cocotb.phoenix_gpu                 Cycle 422: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   950.00ns INFO     cocotb.phoenix_gpu                 Cycle 423: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   952.00ns INFO     cocotb.phoenix_gpu                 Cycle 424: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   954.00ns INFO     cocotb.phoenix_gpu                 Cycle 425: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   956.00ns INFO     cocotb.phoenix_gpu                 Cycle 426: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   958.00ns INFO     cocotb.phoenix_gpu                 Cycle 427: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   960.00ns INFO     cocotb.phoenix_gpu                 Cycle 428: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   962.00ns INFO     cocotb.phoenix_gpu                 Cycle 429: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   964.00ns INFO     cocotb.phoenix_gpu                 Cycle 430: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   966.00ns INFO     cocotb.phoenix_gpu                 Cycle 431: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   968.00ns INFO     cocotb.phoenix_gpu                 Cycle 432: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   970.00ns INFO     cocotb.phoenix_gpu                 Cycle 433: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   972.00ns INFO     cocotb.phoenix_gpu                 Cycle 434: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   974.00ns INFO     cocotb.phoenix_gpu                 Cycle 435: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   976.00ns INFO     cocotb.phoenix_gpu                 Cycle 436: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   978.00ns INFO     cocotb.phoenix_gpu                 Cycle 437: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   980.00ns INFO     cocotb.phoenix_gpu                 Cycle 438: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   982.00ns INFO     cocotb.phoenix_gpu                 Cycle 439: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   984.00ns INFO     cocotb.phoenix_gpu                 Cycle 440: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   986.00ns INFO     cocotb.phoenix_gpu                 Cycle 441: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   988.00ns INFO     cocotb.phoenix_gpu                 Cycle 442: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   990.00ns INFO     cocotb.phoenix_gpu                 Cycle 443: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   992.00ns INFO     cocotb.phoenix_gpu                 Cycle 444: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   994.00ns INFO     cocotb.phoenix_gpu                 Cycle 445: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   996.00ns INFO     cocotb.phoenix_gpu                 Cycle 446: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   998.00ns INFO     cocotb.phoenix_gpu                 Cycle 447: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1000.00ns INFO     cocotb.phoenix_gpu                 Cycle 448: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1002.00ns INFO     cocotb.phoenix_gpu                 Cycle 449: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1004.00ns INFO     cocotb.phoenix_gpu                 Cycle 450: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1006.00ns INFO     cocotb.phoenix_gpu                 Cycle 451: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1008.00ns INFO     cocotb.phoenix_gpu                 Cycle 452: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1010.00ns INFO     cocotb.phoenix_gpu                 Cycle 453: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1012.00ns INFO     cocotb.phoenix_gpu                 Cycle 454: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1014.00ns INFO     cocotb.phoenix_gpu                 Cycle 455: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1016.00ns INFO     cocotb.phoenix_gpu                 Cycle 456: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1018.00ns INFO     cocotb.phoenix_gpu                 Cycle 457: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1020.00ns INFO     cocotb.phoenix_gpu                 Cycle 458: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1022.00ns INFO     cocotb.phoenix_gpu                 Cycle 459: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1024.00ns INFO     cocotb.phoenix_gpu                 Cycle 460: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1026.00ns INFO     cocotb.phoenix_gpu                 Cycle 461: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1028.00ns INFO     cocotb.phoenix_gpu                 Cycle 462: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1030.00ns INFO     cocotb.phoenix_gpu                 Cycle 463: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1032.00ns INFO     cocotb.phoenix_gpu                 Cycle 464: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1034.00ns INFO     cocotb.phoenix_gpu                 Cycle 465: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1036.00ns INFO     cocotb.phoenix_gpu                 Cycle 466: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1038.00ns INFO     cocotb.phoenix_gpu                 Cycle 467: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1040.00ns INFO     cocotb.phoenix_gpu                 Cycle 468: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1042.00ns INFO     cocotb.phoenix_gpu                 Cycle 469: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1044.00ns INFO     cocotb.phoenix_gpu                 Cycle 470: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1046.00ns INFO     cocotb.phoenix_gpu                 Cycle 471: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1048.00ns INFO     cocotb.phoenix_gpu                 Cycle 472: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1050.00ns INFO     cocotb.phoenix_gpu                 Cycle 473: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1052.00ns INFO     cocotb.phoenix_gpu                 Cycle 474: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1054.00ns INFO     cocotb.phoenix_gpu                 Cycle 475: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1056.00ns INFO     cocotb.phoenix_gpu                 Cycle 476: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1058.00ns INFO     cocotb.phoenix_gpu                 Cycle 477: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1060.00ns INFO     cocotb.phoenix_gpu                 Cycle 478: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1062.00ns INFO     cocotb.phoenix_gpu                 Cycle 479: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1064.00ns INFO     cocotb.phoenix_gpu                 Cycle 480: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1066.00ns INFO     cocotb.phoenix_gpu                 Cycle 481: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1068.00ns INFO     cocotb.phoenix_gpu                 Cycle 482: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1070.00ns INFO     cocotb.phoenix_gpu                 Cycle 483: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1072.00ns INFO     cocotb.phoenix_gpu                 Cycle 484: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1074.00ns INFO     cocotb.phoenix_gpu                 Cycle 485: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1076.00ns INFO     cocotb.phoenix_gpu                 Cycle 486: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1078.00ns INFO     cocotb.phoenix_gpu                 Cycle 487: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1080.00ns INFO     cocotb.phoenix_gpu                 Cycle 488: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1082.00ns INFO     cocotb.phoenix_gpu                 Cycle 489: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1084.00ns INFO     cocotb.phoenix_gpu                 Cycle 490: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1086.00ns INFO     cocotb.phoenix_gpu                 Cycle 491: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1088.00ns INFO     cocotb.phoenix_gpu                 Cycle 492: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1090.00ns INFO     cocotb.phoenix_gpu                 Cycle 493: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1092.00ns INFO     cocotb.phoenix_gpu                 Cycle 494: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1094.00ns INFO     cocotb.phoenix_gpu                 Cycle 495: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1096.00ns INFO     cocotb.phoenix_gpu                 Cycle 496: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1098.00ns INFO     cocotb.phoenix_gpu                 Cycle 497: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1100.00ns INFO     cocotb.phoenix_gpu                 Cycle 498: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1102.00ns INFO     cocotb.phoenix_gpu                 Cycle 499: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1104.00ns INFO     cocotb.phoenix_gpu                 Cycle 500: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1106.00ns INFO     cocotb.phoenix_gpu                 Cycle 501: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1108.00ns INFO     cocotb.phoenix_gpu                 Cycle 502: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1110.00ns INFO     cocotb.phoenix_gpu                 Cycle 503: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1112.00ns INFO     cocotb.phoenix_gpu                 Cycle 504: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1114.00ns INFO     cocotb.phoenix_gpu                 Cycle 505: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1116.00ns INFO     cocotb.phoenix_gpu                 Cycle 506: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1118.00ns INFO     cocotb.phoenix_gpu                 Cycle 507: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1120.00ns INFO     cocotb.phoenix_gpu                 Cycle 508: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1122.00ns INFO     cocotb.phoenix_gpu                 Cycle 509: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1124.00ns INFO     cocotb.phoenix_gpu                 Cycle 510: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1126.00ns INFO     cocotb.phoenix_gpu                 Cycle 511: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1128.00ns INFO     cocotb.phoenix_gpu                 Cycle 512: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1130.00ns INFO     cocotb.phoenix_gpu                 Cycle 513: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1132.00ns INFO     cocotb.phoenix_gpu                 Cycle 514: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1134.00ns INFO     cocotb.phoenix_gpu                 Cycle 515: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1136.00ns INFO     cocotb.phoenix_gpu                 Cycle 516: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1138.00ns INFO     cocotb.phoenix_gpu                 Cycle 517: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1140.00ns INFO     cocotb.phoenix_gpu                 Cycle 518: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1142.00ns INFO     cocotb.phoenix_gpu                 Cycle 519: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1144.00ns INFO     cocotb.phoenix_gpu                 Cycle 520: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1146.00ns INFO     cocotb.phoenix_gpu                 Cycle 521: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1148.00ns INFO     cocotb.phoenix_gpu                 Cycle 522: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1150.00ns INFO     cocotb.phoenix_gpu                 Cycle 523: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1152.00ns INFO     cocotb.phoenix_gpu                 Cycle 524: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1154.00ns INFO     cocotb.phoenix_gpu                 Cycle 525: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1156.00ns INFO     cocotb.phoenix_gpu                 Cycle 526: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1158.00ns INFO     cocotb.phoenix_gpu                 Cycle 527: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1160.00ns INFO     cocotb.phoenix_gpu                 Cycle 528: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1162.00ns INFO     cocotb.phoenix_gpu                 Cycle 529: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1164.00ns INFO     cocotb.phoenix_gpu                 Cycle 530: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1166.00ns INFO     cocotb.phoenix_gpu                 Cycle 531: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1168.00ns INFO     cocotb.phoenix_gpu                 Cycle 532: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1170.00ns INFO     cocotb.phoenix_gpu                 Cycle 533: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1172.00ns INFO     cocotb.phoenix_gpu                 Cycle 534: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1174.00ns INFO     cocotb.phoenix_gpu                 Cycle 535: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1176.00ns INFO     cocotb.phoenix_gpu                 Cycle 536: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1178.00ns INFO     cocotb.phoenix_gpu                 Cycle 537: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1180.00ns INFO     cocotb.phoenix_gpu                 Cycle 538: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1182.00ns INFO     cocotb.phoenix_gpu                 Cycle 539: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1184.00ns INFO     cocotb.phoenix_gpu                 Cycle 540: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1186.00ns INFO     cocotb.phoenix_gpu                 Cycle 541: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1188.00ns INFO     cocotb.phoenix_gpu                 Cycle 542: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1190.00ns INFO     cocotb.phoenix_gpu                 Cycle 543: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1192.00ns INFO     cocotb.phoenix_gpu                 Cycle 544: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1194.00ns INFO     cocotb.phoenix_gpu                 Cycle 545: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1196.00ns INFO     cocotb.phoenix_gpu                 Cycle 546: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1198.00ns INFO     cocotb.phoenix_gpu                 Cycle 547: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1200.00ns INFO     cocotb.phoenix_gpu                 Cycle 548: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1202.00ns INFO     cocotb.phoenix_gpu                 Cycle 549: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1204.00ns INFO     cocotb.phoenix_gpu                 Cycle 550: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1206.00ns INFO     cocotb.phoenix_gpu                 Cycle 551: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1208.00ns INFO     cocotb.phoenix_gpu                 Cycle 552: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1210.00ns INFO     cocotb.phoenix_gpu                 Cycle 553: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1212.00ns INFO     cocotb.phoenix_gpu                 Cycle 554: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1214.00ns INFO     cocotb.phoenix_gpu                 Cycle 555: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1216.00ns INFO     cocotb.phoenix_gpu                 Cycle 556: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1218.00ns INFO     cocotb.phoenix_gpu                 Cycle 557: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1220.00ns INFO     cocotb.phoenix_gpu                 Cycle 558: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1222.00ns INFO     cocotb.phoenix_gpu                 Cycle 559: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1224.00ns INFO     cocotb.phoenix_gpu                 Cycle 560: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1226.00ns INFO     cocotb.phoenix_gpu                 Cycle 561: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1228.00ns INFO     cocotb.phoenix_gpu                 Cycle 562: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1230.00ns INFO     cocotb.phoenix_gpu                 Cycle 563: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1232.00ns INFO     cocotb.phoenix_gpu                 Cycle 564: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1234.00ns INFO     cocotb.phoenix_gpu                 Cycle 565: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1236.00ns INFO     cocotb.phoenix_gpu                 Cycle 566: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1238.00ns INFO     cocotb.phoenix_gpu                 Cycle 567: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1240.00ns INFO     cocotb.phoenix_gpu                 Cycle 568: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1242.00ns INFO     cocotb.phoenix_gpu                 Cycle 569: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1244.00ns INFO     cocotb.phoenix_gpu                 Cycle 570: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1246.00ns INFO     cocotb.phoenix_gpu                 Cycle 571: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1248.00ns INFO     cocotb.phoenix_gpu                 Cycle 572: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1250.00ns INFO     cocotb.phoenix_gpu                 Cycle 573: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1252.00ns INFO     cocotb.phoenix_gpu                 Cycle 574: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1254.00ns INFO     cocotb.phoenix_gpu                 Cycle 575: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1256.00ns INFO     cocotb.phoenix_gpu                 Cycle 576: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1258.00ns INFO     cocotb.phoenix_gpu                 Cycle 577: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1260.00ns INFO     cocotb.phoenix_gpu                 Cycle 578: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1262.00ns INFO     cocotb.phoenix_gpu                 Cycle 579: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1264.00ns INFO     cocotb.phoenix_gpu                 Cycle 580: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1266.00ns INFO     cocotb.phoenix_gpu                 Cycle 581: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1268.00ns INFO     cocotb.phoenix_gpu                 Cycle 582: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1270.00ns INFO     cocotb.phoenix_gpu                 Cycle 583: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1272.00ns INFO     cocotb.phoenix_gpu                 Cycle 584: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1274.00ns INFO     cocotb.phoenix_gpu                 Cycle 585: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1276.00ns INFO     cocotb.phoenix_gpu                 Cycle 586: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1278.00ns INFO     cocotb.phoenix_gpu                 Cycle 587: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1280.00ns INFO     cocotb.phoenix_gpu                 Cycle 588: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1282.00ns INFO     cocotb.phoenix_gpu                 Cycle 589: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1284.00ns INFO     cocotb.phoenix_gpu                 Cycle 590: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1286.00ns INFO     cocotb.phoenix_gpu                 Cycle 591: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1288.00ns INFO     cocotb.phoenix_gpu                 Cycle 592: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1290.00ns INFO     cocotb.phoenix_gpu                 Cycle 593: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1292.00ns INFO     cocotb.phoenix_gpu                 Cycle 594: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1294.00ns INFO     cocotb.phoenix_gpu                 Cycle 595: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1296.00ns INFO     cocotb.phoenix_gpu                 Cycle 596: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1298.00ns INFO     cocotb.phoenix_gpu                 Cycle 597: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1300.00ns INFO     cocotb.phoenix_gpu                 Cycle 598: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1302.00ns INFO     cocotb.phoenix_gpu                 Cycle 599: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1304.00ns INFO     cocotb.phoenix_gpu                 Cycle 600: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1306.00ns INFO     cocotb.phoenix_gpu                 Cycle 601: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1308.00ns INFO     cocotb.phoenix_gpu                 Cycle 602: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1310.00ns INFO     cocotb.phoenix_gpu                 Cycle 603: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1312.00ns INFO     cocotb.phoenix_gpu                 Cycle 604: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1314.00ns INFO     cocotb.phoenix_gpu                 Cycle 605: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1316.00ns INFO     cocotb.phoenix_gpu                 Cycle 606: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1318.00ns INFO     cocotb.phoenix_gpu                 Cycle 607: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1320.00ns INFO     cocotb.phoenix_gpu                 Cycle 608: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1322.00ns INFO     cocotb.phoenix_gpu                 Cycle 609: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1324.00ns INFO     cocotb.phoenix_gpu                 Cycle 610: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1326.00ns INFO     cocotb.phoenix_gpu                 Cycle 611: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1328.00ns INFO     cocotb.phoenix_gpu                 Cycle 612: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1330.00ns INFO     cocotb.phoenix_gpu                 Cycle 613: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1332.00ns INFO     cocotb.phoenix_gpu                 Cycle 614: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1334.00ns INFO     cocotb.phoenix_gpu                 Cycle 615: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1336.00ns INFO     cocotb.phoenix_gpu                 Cycle 616: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1338.00ns INFO     cocotb.phoenix_gpu                 Cycle 617: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1340.00ns INFO     cocotb.phoenix_gpu                 Cycle 618: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1342.00ns INFO     cocotb.phoenix_gpu                 Cycle 619: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1344.00ns INFO     cocotb.phoenix_gpu                 Cycle 620: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1346.00ns INFO     cocotb.phoenix_gpu                 Cycle 621: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1348.00ns INFO     cocotb.phoenix_gpu                 Cycle 622: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1350.00ns INFO     cocotb.phoenix_gpu                 Cycle 623: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1352.00ns INFO     cocotb.phoenix_gpu                 Cycle 624: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1354.00ns INFO     cocotb.phoenix_gpu                 Cycle 625: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1356.00ns INFO     cocotb.phoenix_gpu                 Cycle 626: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1358.00ns INFO     cocotb.phoenix_gpu                 Cycle 627: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1360.00ns INFO     cocotb.phoenix_gpu                 Cycle 628: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1362.00ns INFO     cocotb.phoenix_gpu                 Cycle 629: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1364.00ns INFO     cocotb.phoenix_gpu                 Cycle 630: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1366.00ns INFO     cocotb.phoenix_gpu                 Cycle 631: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1368.00ns INFO     cocotb.phoenix_gpu                 Cycle 632: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1370.00ns INFO     cocotb.phoenix_gpu                 Cycle 633: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1372.00ns INFO     cocotb.phoenix_gpu                 Cycle 634: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1374.00ns INFO     cocotb.phoenix_gpu                 Cycle 635: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1376.00ns INFO     cocotb.phoenix_gpu                 Cycle 636: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1378.00ns INFO     cocotb.phoenix_gpu                 Cycle 637: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1380.00ns INFO     cocotb.phoenix_gpu                 Cycle 638: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1382.00ns INFO     cocotb.phoenix_gpu                 Cycle 639: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1384.00ns INFO     cocotb.phoenix_gpu                 Cycle 640: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1386.00ns INFO     cocotb.phoenix_gpu                 Cycle 641: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1388.00ns INFO     cocotb.phoenix_gpu                 Cycle 642: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1390.00ns INFO     cocotb.phoenix_gpu                 Cycle 643: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1392.00ns INFO     cocotb.phoenix_gpu                 Cycle 644: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1394.00ns INFO     cocotb.phoenix_gpu                 Cycle 645: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1396.00ns INFO     cocotb.phoenix_gpu                 Cycle 646: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1398.00ns INFO     cocotb.phoenix_gpu                 Cycle 647: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1400.00ns INFO     cocotb.phoenix_gpu                 Cycle 648: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1402.00ns INFO     cocotb.phoenix_gpu                 Cycle 649: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1404.00ns INFO     cocotb.phoenix_gpu                 Cycle 650: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1406.00ns INFO     cocotb.phoenix_gpu                 Cycle 651: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1408.00ns INFO     cocotb.phoenix_gpu                 Cycle 652: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1410.00ns INFO     cocotb.phoenix_gpu                 Cycle 653: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1412.00ns INFO     cocotb.phoenix_gpu                 Cycle 654: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1414.00ns INFO     cocotb.phoenix_gpu                 Cycle 655: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1416.00ns INFO     cocotb.phoenix_gpu                 Cycle 656: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1418.00ns INFO     cocotb.phoenix_gpu                 Cycle 657: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1420.00ns INFO     cocotb.phoenix_gpu                 Cycle 658: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1422.00ns INFO     cocotb.phoenix_gpu                 Cycle 659: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1424.00ns INFO     cocotb.phoenix_gpu                 Cycle 660: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1426.00ns INFO     cocotb.phoenix_gpu                 Cycle 661: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1428.00ns INFO     cocotb.phoenix_gpu                 Cycle 662: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1430.00ns INFO     cocotb.phoenix_gpu                 Cycle 663: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1432.00ns INFO     cocotb.phoenix_gpu                 Cycle 664: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1434.00ns INFO     cocotb.phoenix_gpu                 Cycle 665: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1436.00ns INFO     cocotb.phoenix_gpu                 Cycle 666: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1438.00ns INFO     cocotb.phoenix_gpu                 Cycle 667: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1440.00ns INFO     cocotb.phoenix_gpu                 Cycle 668: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1442.00ns INFO     cocotb.phoenix_gpu                 Cycle 669: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1444.00ns INFO     cocotb.phoenix_gpu                 Cycle 670: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1446.00ns INFO     cocotb.phoenix_gpu                 Cycle 671: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1448.00ns INFO     cocotb.phoenix_gpu                 Cycle 672: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1450.00ns INFO     cocotb.phoenix_gpu                 Cycle 673: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1452.00ns INFO     cocotb.phoenix_gpu                 Cycle 674: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1454.00ns INFO     cocotb.phoenix_gpu                 Cycle 675: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1456.00ns INFO     cocotb.phoenix_gpu                 Cycle 676: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1458.00ns INFO     cocotb.phoenix_gpu                 Cycle 677: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1460.00ns INFO     cocotb.phoenix_gpu                 Cycle 678: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1462.00ns INFO     cocotb.phoenix_gpu                 Cycle 679: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1464.00ns INFO     cocotb.phoenix_gpu                 Cycle 680: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1466.00ns INFO     cocotb.phoenix_gpu                 Cycle 681: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1468.00ns INFO     cocotb.phoenix_gpu                 Cycle 682: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1470.00ns INFO     cocotb.phoenix_gpu                 Cycle 683: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1472.00ns INFO     cocotb.phoenix_gpu                 Cycle 684: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1474.00ns INFO     cocotb.phoenix_gpu                 Cycle 685: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1476.00ns INFO     cocotb.phoenix_gpu                 Cycle 686: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1478.00ns INFO     cocotb.phoenix_gpu                 Cycle 687: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1480.00ns INFO     cocotb.phoenix_gpu                 Cycle 688: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1482.00ns INFO     cocotb.phoenix_gpu                 Cycle 689: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1484.00ns INFO     cocotb.phoenix_gpu                 Cycle 690: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1486.00ns INFO     cocotb.phoenix_gpu                 Cycle 691: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1488.00ns INFO     cocotb.phoenix_gpu                 Cycle 692: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1490.00ns INFO     cocotb.phoenix_gpu                 Cycle 693: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1492.00ns INFO     cocotb.phoenix_gpu                 Cycle 694: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1494.00ns INFO     cocotb.phoenix_gpu                 Cycle 695: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1496.00ns INFO     cocotb.phoenix_gpu                 Cycle 696: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1498.00ns INFO     cocotb.phoenix_gpu                 Cycle 697: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1500.00ns INFO     cocotb.phoenix_gpu                 Cycle 698: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1502.00ns INFO     cocotb.phoenix_gpu                 Cycle 699: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1504.00ns INFO     cocotb.phoenix_gpu                 Cycle 700: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1506.00ns INFO     cocotb.phoenix_gpu                 Cycle 701: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1508.00ns INFO     cocotb.phoenix_gpu                 Cycle 702: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1510.00ns INFO     cocotb.phoenix_gpu                 Cycle 703: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1512.00ns INFO     cocotb.phoenix_gpu                 Cycle 704: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1514.00ns INFO     cocotb.phoenix_gpu                 Cycle 705: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1516.00ns INFO     cocotb.phoenix_gpu                 Cycle 706: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1518.00ns INFO     cocotb.phoenix_gpu                 Cycle 707: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1520.00ns INFO     cocotb.phoenix_gpu                 Cycle 708: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1522.00ns INFO     cocotb.phoenix_gpu                 Cycle 709: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1524.00ns INFO     cocotb.phoenix_gpu                 Cycle 710: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1526.00ns INFO     cocotb.phoenix_gpu                 Cycle 711: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1528.00ns INFO     cocotb.phoenix_gpu                 Cycle 712: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1530.00ns INFO     cocotb.phoenix_gpu                 Cycle 713: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1532.00ns INFO     cocotb.phoenix_gpu                 Cycle 714: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1534.00ns INFO     cocotb.phoenix_gpu                 Cycle 715: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1536.00ns INFO     cocotb.phoenix_gpu                 Cycle 716: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1538.00ns INFO     cocotb.phoenix_gpu                 Cycle 717: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1540.00ns INFO     cocotb.phoenix_gpu                 Cycle 718: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1542.00ns INFO     cocotb.phoenix_gpu                 Cycle 719: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1544.00ns INFO     cocotb.phoenix_gpu                 Cycle 720: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1546.00ns INFO     cocotb.phoenix_gpu                 Cycle 721: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1548.00ns INFO     cocotb.phoenix_gpu                 Cycle 722: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1550.00ns INFO     cocotb.phoenix_gpu                 Cycle 723: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1552.00ns INFO     cocotb.phoenix_gpu                 Cycle 724: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1554.00ns INFO     cocotb.phoenix_gpu                 Cycle 725: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1556.00ns INFO     cocotb.phoenix_gpu                 Cycle 726: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1558.00ns INFO     cocotb.phoenix_gpu                 Cycle 727: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1560.00ns INFO     cocotb.phoenix_gpu                 Cycle 728: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1562.00ns INFO     cocotb.phoenix_gpu                 Cycle 729: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1564.00ns INFO     cocotb.phoenix_gpu                 Cycle 730: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1566.00ns INFO     cocotb.phoenix_gpu                 Cycle 731: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1568.00ns INFO     cocotb.phoenix_gpu                 Cycle 732: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1570.00ns INFO     cocotb.phoenix_gpu                 Cycle 733: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1572.00ns INFO     cocotb.phoenix_gpu                 Cycle 734: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1574.00ns INFO     cocotb.phoenix_gpu                 Cycle 735: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1576.00ns INFO     cocotb.phoenix_gpu                 Cycle 736: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1578.00ns INFO     cocotb.phoenix_gpu                 Cycle 737: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1580.00ns INFO     cocotb.phoenix_gpu                 Cycle 738: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1582.00ns INFO     cocotb.phoenix_gpu                 Cycle 739: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1584.00ns INFO     cocotb.phoenix_gpu                 Cycle 740: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1586.00ns INFO     cocotb.phoenix_gpu                 Cycle 741: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1588.00ns INFO     cocotb.phoenix_gpu                 Cycle 742: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1590.00ns INFO     cocotb.phoenix_gpu                 Cycle 743: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1592.00ns INFO     cocotb.phoenix_gpu                 Cycle 744: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1594.00ns INFO     cocotb.phoenix_gpu                 Cycle 745: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1596.00ns INFO     cocotb.phoenix_gpu                 Cycle 746: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1598.00ns INFO     cocotb.phoenix_gpu                 Cycle 747: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1600.00ns INFO     cocotb.phoenix_gpu                 Cycle 748: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1602.00ns INFO     cocotb.phoenix_gpu                 Cycle 749: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1604.00ns INFO     cocotb.phoenix_gpu                 Cycle 750: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1606.00ns INFO     cocotb.phoenix_gpu                 Cycle 751: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1608.00ns INFO     cocotb.phoenix_gpu                 Cycle 752: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1610.00ns INFO     cocotb.phoenix_gpu                 Cycle 753: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1612.00ns INFO     cocotb.phoenix_gpu                 Cycle 754: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1614.00ns INFO     cocotb.phoenix_gpu                 Cycle 755: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1616.00ns INFO     cocotb.phoenix_gpu                 Cycle 756: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1618.00ns INFO     cocotb.phoenix_gpu                 Cycle 757: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1620.00ns INFO     cocotb.phoenix_gpu                 Cycle 758: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1622.00ns INFO     cocotb.phoenix_gpu                 Cycle 759: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1624.00ns INFO     cocotb.phoenix_gpu                 Cycle 760: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1626.00ns INFO     cocotb.phoenix_gpu                 Cycle 761: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1628.00ns INFO     cocotb.phoenix_gpu                 Cycle 762: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1630.00ns INFO     cocotb.phoenix_gpu                 Cycle 763: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1632.00ns INFO     cocotb.phoenix_gpu                 Cycle 764: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1634.00ns INFO     cocotb.phoenix_gpu                 Cycle 765: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1636.00ns INFO     cocotb.phoenix_gpu                 Cycle 766: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1638.00ns INFO     cocotb.phoenix_gpu                 Cycle 767: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1640.00ns INFO     cocotb.phoenix_gpu                 Cycle 768: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1642.00ns INFO     cocotb.phoenix_gpu                 Cycle 769: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1644.00ns INFO     cocotb.phoenix_gpu                 Cycle 770: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1646.00ns INFO     cocotb.phoenix_gpu                 Cycle 771: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1648.00ns INFO     cocotb.phoenix_gpu                 Cycle 772: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1650.00ns INFO     cocotb.phoenix_gpu                 Cycle 773: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1652.00ns INFO     cocotb.phoenix_gpu                 Cycle 774: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1654.00ns INFO     cocotb.phoenix_gpu                 Cycle 775: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1656.00ns INFO     cocotb.phoenix_gpu                 Cycle 776: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1658.00ns INFO     cocotb.phoenix_gpu                 Cycle 777: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1660.00ns INFO     cocotb.phoenix_gpu                 Cycle 778: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1662.00ns INFO     cocotb.phoenix_gpu                 Cycle 779: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1664.00ns INFO     cocotb.phoenix_gpu                 Cycle 780: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1666.00ns INFO     cocotb.phoenix_gpu                 Cycle 781: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1668.00ns INFO     cocotb.phoenix_gpu                 Cycle 782: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1670.00ns INFO     cocotb.phoenix_gpu                 Cycle 783: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1672.00ns INFO     cocotb.phoenix_gpu                 Cycle 784: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1674.00ns INFO     cocotb.phoenix_gpu                 Cycle 785: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1676.00ns INFO     cocotb.phoenix_gpu                 Cycle 786: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1678.00ns INFO     cocotb.phoenix_gpu                 Cycle 787: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1680.00ns INFO     cocotb.phoenix_gpu                 Cycle 788: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1682.00ns INFO     cocotb.phoenix_gpu                 Cycle 789: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1684.00ns INFO     cocotb.phoenix_gpu                 Cycle 790: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1686.00ns INFO     cocotb.phoenix_gpu                 Cycle 791: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1688.00ns INFO     cocotb.phoenix_gpu                 Cycle 792: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+  1690.00ns INFO     cocotb.phoenix_gpu                 Cycle 793: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1692.00ns INFO     cocotb.phoenix_gpu                 Cycle 794: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1694.00ns INFO     cocotb.phoenix_gpu                 Cycle 795: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1696.00ns INFO     cocotb.phoenix_gpu                 Cycle 796: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1698.00ns INFO     cocotb.phoenix_gpu                 Cycle 797: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1700.00ns INFO     cocotb.phoenix_gpu                 Cycle 798: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1702.00ns INFO     cocotb.phoenix_gpu                 Cycle 799: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1704.00ns INFO     cocotb.phoenix_gpu                 Cycle 800: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1706.00ns INFO     cocotb.phoenix_gpu                 Cycle 801: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1708.00ns INFO     cocotb.phoenix_gpu                 Cycle 802: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1710.00ns INFO     cocotb.phoenix_gpu                 Cycle 803: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1712.00ns INFO     cocotb.phoenix_gpu                 Cycle 804: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1714.00ns INFO     cocotb.phoenix_gpu                 Cycle 805: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1716.00ns INFO     cocotb.phoenix_gpu                 Cycle 806: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1718.00ns INFO     cocotb.phoenix_gpu                 Cycle 807: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1720.00ns INFO     cocotb.phoenix_gpu                 Cycle 808: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1722.00ns INFO     cocotb.phoenix_gpu                 Cycle 809: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1724.00ns INFO     cocotb.phoenix_gpu                 Cycle 810: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1726.00ns INFO     cocotb.phoenix_gpu                 Cycle 811: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1728.00ns INFO     cocotb.phoenix_gpu                 Cycle 812: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1730.00ns INFO     cocotb.phoenix_gpu                 Cycle 813: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1732.00ns INFO     cocotb.phoenix_gpu                 Cycle 814: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1734.00ns INFO     cocotb.phoenix_gpu                 Cycle 815: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1736.00ns INFO     cocotb.phoenix_gpu                 Cycle 816: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1738.00ns INFO     cocotb.phoenix_gpu                 Cycle 817: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1740.00ns INFO     cocotb.phoenix_gpu                 Cycle 818: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1742.00ns INFO     cocotb.phoenix_gpu                 Cycle 819: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1744.00ns INFO     cocotb.phoenix_gpu                 Cycle 820: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1746.00ns INFO     cocotb.phoenix_gpu                 Cycle 821: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1748.00ns INFO     cocotb.phoenix_gpu                 Cycle 822: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1750.00ns INFO     cocotb.phoenix_gpu                 Cycle 823: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1752.00ns INFO     cocotb.phoenix_gpu                 Cycle 824: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1754.00ns INFO     cocotb.phoenix_gpu                 Cycle 825: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1756.00ns INFO     cocotb.phoenix_gpu                 Cycle 826: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1758.00ns INFO     cocotb.phoenix_gpu                 Cycle 827: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1760.00ns INFO     cocotb.phoenix_gpu                 Cycle 828: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1762.00ns INFO     cocotb.phoenix_gpu                 Cycle 829: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1764.00ns INFO     cocotb.phoenix_gpu                 Cycle 830: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1766.00ns INFO     cocotb.phoenix_gpu                 Cycle 831: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1768.00ns INFO     cocotb.phoenix_gpu                 Cycle 832: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1770.00ns INFO     cocotb.phoenix_gpu                 Cycle 833: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1772.00ns INFO     cocotb.phoenix_gpu                 Cycle 834: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1774.00ns INFO     cocotb.phoenix_gpu                 Cycle 835: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1776.00ns INFO     cocotb.phoenix_gpu                 Cycle 836: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1778.00ns INFO     cocotb.phoenix_gpu                 Cycle 837: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1780.00ns INFO     cocotb.phoenix_gpu                 Cycle 838: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1782.00ns INFO     cocotb.phoenix_gpu                 Cycle 839: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1784.00ns INFO     cocotb.phoenix_gpu                 Cycle 840: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1786.00ns INFO     cocotb.phoenix_gpu                 Cycle 841: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1788.00ns INFO     cocotb.phoenix_gpu                 Cycle 842: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1790.00ns INFO     cocotb.phoenix_gpu                 Cycle 843: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1792.00ns INFO     cocotb.phoenix_gpu                 Cycle 844: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1794.00ns INFO     cocotb.phoenix_gpu                 Cycle 845: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1796.00ns INFO     cocotb.phoenix_gpu                 Cycle 846: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1798.00ns INFO     cocotb.phoenix_gpu                 Cycle 847: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1800.00ns INFO     cocotb.phoenix_gpu                 Cycle 848: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1802.00ns INFO     cocotb.phoenix_gpu                 Cycle 849: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1804.00ns INFO     cocotb.phoenix_gpu                 Cycle 850: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1806.00ns INFO     cocotb.phoenix_gpu                 Cycle 851: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1808.00ns INFO     cocotb.phoenix_gpu                 Cycle 852: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1810.00ns INFO     cocotb.phoenix_gpu                 Cycle 853: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1812.00ns INFO     cocotb.phoenix_gpu                 Cycle 854: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1814.00ns INFO     cocotb.phoenix_gpu                 Cycle 855: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1816.00ns INFO     cocotb.phoenix_gpu                 Cycle 856: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1818.00ns INFO     cocotb.phoenix_gpu                 Cycle 857: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1820.00ns INFO     cocotb.phoenix_gpu                 Cycle 858: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1822.00ns INFO     cocotb.phoenix_gpu                 Cycle 859: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1824.00ns INFO     cocotb.phoenix_gpu                 Cycle 860: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1826.00ns INFO     cocotb.phoenix_gpu                 Cycle 861: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+  1828.00ns INFO     cocotb.phoenix_gpu                 Cycle 862: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1830.00ns INFO     cocotb.phoenix_gpu                 Cycle 863: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1832.00ns INFO     cocotb.phoenix_gpu                 Cycle 864: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1834.00ns INFO     cocotb.phoenix_gpu                 Cycle 865: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1836.00ns INFO     cocotb.phoenix_gpu                 Cycle 866: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+  1838.00ns INFO     cocotb.phoenix_gpu                 Cycle 867: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+  1840.00ns INFO     cocotb.phoenix_gpu                 Cycle 868: all_warps_done=1 sm_busy=0 block_done=1 warp0=101
+  1842.00ns INFO     cocotb.phoenix_gpu                 Cycle 869: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+  1844.00ns INFO     cocotb.phoenix_gpu                 Completed MatMulLooped in 870 cycles
+  1844.00ns INFO     cocotb.phoenix_gpu                 LSU Active: 0 cycles (0.0%)
+  1844.00ns INFO     cocotb.phoenix_gpu                 Scheduler Stalled: 720 cycles (82.8%)
+  1848.00ns INFO     cocotb.phoenix_gpu                 C[0]: expected=7, got=0
+  1852.00ns INFO     cocotb.phoenix_gpu                 C[1]: expected=10, got=0
+  1856.00ns INFO     cocotb.phoenix_gpu                 C[2]: expected=15, got=0
+  1860.00ns INFO     cocotb.phoenix_gpu                 C[3]: expected=22, got=0
+  1860.00ns INFO     cocotb.regression                  test_matmul_looped passed
+  1860.00ns INFO     cocotb.regression                  ************************************************************************************************************
+                                                        ** TEST                                                STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************
+                                                        ** test.kernels.test_matmul_looped.test_matmul_looped   PASS        1860.00           0.27       6923.83  **
+                                                        ************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                     1860.00           0.32       5751.19  **
+                                                        ************************************************************************************************************
+                                                        
+nals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.dispatcher.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.dispatcher.$ivl_for_loop34.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.dispatcher.$ivl_for_loop35.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop39.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop40.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop41.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop42.
+make[1]: Leaving directory '/home/rohit/Coding/GPU'

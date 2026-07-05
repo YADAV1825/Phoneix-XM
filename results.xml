@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1783251225" />
+    <testcase name="test_matmul_looped" classname="test.kernels.test_matmul_looped" file="/home/rohit/Coding/GPU/test/kernels/test_matmul_looped.py" lineno="30" time="0.26863741874694824" sim_time_ns="1860.001" ratio_time="6923.834396101343" />
+  </testsuite>
+</testsuites>

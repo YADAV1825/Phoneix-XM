@@ -1,0 +1,31 @@
+# Phoenix-XM Synthesis Script for Yosys
+# Level 3 Verification: Area, LUTs, Fmax estimation.
+
+# 1. Read SystemVerilog files (Yosys requires a plugin for full SV, 
+# or use read_verilog -sv for basic support).
+read_verilog -sv ../rtl/pkg/phoenix_pkg.sv
+read_verilog -sv ../rtl/sm/phoenix_alu.sv
+read_verilog -sv ../rtl/sm/phoenix_decode.sv
+read_verilog -sv ../rtl/sm/phoenix_warp_scheduler.sv
+read_verilog -sv ../rtl/sm/phoenix_lsu.sv
+read_verilog -sv ../rtl/sm/phoenix_tensor_core.sv
+# Add remaining files as needed...
+
+# 2. Set the top module
+hierarchy -top phoenix_alu
+
+# 3. High-level synthesis
+proc; opt; fsm; opt; memory; opt
+
+# 4. Techmap to generic logic gates
+techmap; opt
+
+# 5. Map flip-flops and logic
+dfflibmap -liberty default
+abc -liberty default
+
+# 6. Generate detailed statistics and reports
+stat
+
+# To view the critical path and estimated Fmax, a cell library is required.
+# In a real run, you would load Sky130 or ASAP7 cell libraries here.

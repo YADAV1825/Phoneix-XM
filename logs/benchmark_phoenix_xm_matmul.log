@@ -1,0 +1,626 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/home/rohit/Coding/GPU'
+mkdir -p sim_build
+/usr/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s phoenix_gpu -g2012 -g2012 -s tb_dump -f sim_build/cmds.f -s cocotb_iverilog_dump  /home/rohit/Coding/GPU/test/helpers/tb_dump.sv /home/rohit/Coding/GPU/rtl/pkg/phoenix_pkg.sv /home/rohit/Coding/GPU/rtl/cache/phoenix_l1_dcache.sv /home/rohit/Coding/GPU/rtl/cache/phoenix_l1_icache.sv /home/rohit/Coding/GPU/rtl/cache/phoenix_l2_cache.sv /home/rohit/Coding/GPU/rtl/fabric/phoenix_fabric.sv /home/rohit/Coding/GPU/rtl/fabric/phoenix_fabric_router.sv /home/rohit/Coding/GPU/rtl/memory/phoenix_mem_controller.sv /home/rohit/Coding/GPU/rtl/memory/phoenix_global_mem.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_alu.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_sfu.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_decode.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_fetch.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_regfile.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_shared_mem.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_tensor_core.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv /home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv /home/rohit/Coding/GPU/rtl/tile/phoenix_dispatcher.sv /home/rohit/Coding/GPU/rtl/tile/phoenix_tile_crossbar.sv /home/rohit/Coding/GPU/rtl/tile/phoenix_tile.sv /home/rohit/Coding/GPU/rtl/phoenix_global_scheduler.sv /home/rohit/Coding/GPU/rtl/phoenix_gpu.sv sim_build/cocotb_iverilog_dump.v
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/tile/phoenix_dispatcher.sv:78: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:91: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_warp_scheduler.sv:93: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_lsu.sv:94: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'exec_decoded[109:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:390: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:391: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:392: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_s[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:393: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:394: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_lt_u[3:0]').
+/home/rohit/Coding/GPU/rtl/sm/phoenix_sm.sv:395: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'alu_cmp_zero[3:0]').
+/home/rohit/Coding/GPU/rtl/tile/phoenix_dispatcher.sv:78: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in '+i[31:0]').
+rm -f results.xml
+MODULE=test.kernels.test_matmul TESTCASE= TOPLEVEL=phoenix_gpu TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /home/rohit/.pyenv/versions/3.10.11/lib/python3.10/site-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst 
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (stable)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /home/rohit/.pyenv/versions/3.10.11/lib/python3.10/site-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1783251217
+     0.00ns INFO     cocotb.regression                  Found test test.kernels.test_matmul.test_matmul
+     0.00ns INFO     cocotb.regression                  running test_matmul (1/1)
+                                                          Integration Verification: Matrix Multiplication Real Benchmark
+FST info: dumpfile dump.vcd opened for output.
+FST warning: sim_build/cocotb_iverilog_dump.v:3: $dumpfile called after $dumpvars started,
+                                                 using existing file (dump.vcd).
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[0].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[1].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[2].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.sms[3].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.dispatcher.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.dispatcher.$ivl_for_loop34.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.dispatcher.$ivl_for_loop35.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop39.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop40.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop41.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[0].tile_inst.$ivl_for_loop42.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[0].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[1].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[2].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.alu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.alu.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.decoder.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.fetch_unit.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.gen_byte_en.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop3.$ivl_for_loop4.
+FST warning: ignoring sig   114.00ns INFO     cocotb.phoenix_gpu                 Cycle 1: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+   116.00ns INFO     cocotb.phoenix_gpu                 Cycle 2: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+   118.00ns INFO     cocotb.phoenix_gpu                 Cycle 3: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   120.00ns INFO     cocotb.phoenix_gpu                 Cycle 4: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   122.00ns INFO     cocotb.phoenix_gpu                 Cycle 5: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   124.00ns INFO     cocotb.phoenix_gpu                 Cycle 6: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   126.00ns INFO     cocotb.phoenix_gpu                 Cycle 7: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   128.00ns INFO     cocotb.phoenix_gpu                 Cycle 8: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   130.00ns INFO     cocotb.phoenix_gpu                 Cycle 9: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   132.00ns INFO     cocotb.phoenix_gpu                 Cycle 10: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   134.00ns INFO     cocotb.phoenix_gpu                 Cycle 11: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   136.00ns INFO     cocotb.phoenix_gpu                 Cycle 12: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   138.00ns INFO     cocotb.phoenix_gpu                 Cycle 13: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   140.00ns INFO     cocotb.phoenix_gpu                 Cycle 14: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   142.00ns INFO     cocotb.phoenix_gpu                 Cycle 15: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   144.00ns INFO     cocotb.phoenix_gpu                 Cycle 16: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   146.00ns INFO     cocotb.phoenix_gpu                 Cycle 17: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   148.00ns INFO     cocotb.phoenix_gpu                 Cycle 18: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   150.00ns INFO     cocotb.phoenix_gpu                 Cycle 19: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   152.00ns INFO     cocotb.phoenix_gpu                 Cycle 20: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   154.00ns INFO     cocotb.phoenix_gpu                 Cycle 21: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   156.00ns INFO     cocotb.phoenix_gpu                 Cycle 22: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   158.00ns INFO     cocotb.phoenix_gpu                 Cycle 23: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   160.00ns INFO     cocotb.phoenix_gpu                 Cycle 24: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   162.00ns INFO     cocotb.phoenix_gpu                 Cycle 25: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   164.00ns INFO     cocotb.phoenix_gpu                 Cycle 26: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   166.00ns INFO     cocotb.phoenix_gpu                 Cycle 27: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   168.00ns INFO     cocotb.phoenix_gpu                 Cycle 28: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   170.00ns INFO     cocotb.phoenix_gpu                 Cycle 29: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   172.00ns INFO     cocotb.phoenix_gpu                 Cycle 30: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   174.00ns INFO     cocotb.phoenix_gpu                 Cycle 31: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   176.00ns INFO     cocotb.phoenix_gpu                 Cycle 32: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   178.00ns INFO     cocotb.phoenix_gpu                 Cycle 33: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   180.00ns INFO     cocotb.phoenix_gpu                 Cycle 34: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   182.00ns INFO     cocotb.phoenix_gpu                 Cycle 35: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   184.00ns INFO     cocotb.phoenix_gpu                 Cycle 36: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   186.00ns INFO     cocotb.phoenix_gpu                 Cycle 37: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   188.00ns INFO     cocotb.phoenix_gpu                 Cycle 38: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   190.00ns INFO     cocotb.phoenix_gpu                 Cycle 39: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   192.00ns INFO     cocotb.phoenix_gpu                 Cycle 40: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   194.00ns INFO     cocotb.phoenix_gpu                 Cycle 41: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   196.00ns INFO     cocotb.phoenix_gpu                 Cycle 42: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   198.00ns INFO     cocotb.phoenix_gpu                 Cycle 43: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   200.00ns INFO     cocotb.phoenix_gpu                 Cycle 44: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   202.00ns INFO     cocotb.phoenix_gpu                 Cycle 45: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   204.00ns INFO     cocotb.phoenix_gpu                 Cycle 46: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   206.00ns INFO     cocotb.phoenix_gpu                 Cycle 47: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   208.00ns INFO     cocotb.phoenix_gpu                 Cycle 48: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   210.00ns INFO     cocotb.phoenix_gpu                 Cycle 49: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   212.00ns INFO     cocotb.phoenix_gpu                 Cycle 50: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   214.00ns INFO     cocotb.phoenix_gpu                 Cycle 51: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   216.00ns INFO     cocotb.phoenix_gpu                 Cycle 52: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   218.00ns INFO     cocotb.phoenix_gpu                 Cycle 53: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   220.00ns INFO     cocotb.phoenix_gpu                 Cycle 54: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   222.00ns INFO     cocotb.phoenix_gpu                 Cycle 55: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   224.00ns INFO     cocotb.phoenix_gpu                 Cycle 56: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   226.00ns INFO     cocotb.phoenix_gpu                 Cycle 57: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   228.00ns INFO     cocotb.phoenix_gpu                 Cycle 58: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   230.00ns INFO     cocotb.phoenix_gpu                 Cycle 59: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   232.00ns INFO     cocotb.phoenix_gpu                 Cycle 60: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   234.00ns INFO     cocotb.phoenix_gpu                 Cycle 61: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   236.00ns INFO     cocotb.phoenix_gpu                 Cycle 62: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   238.00ns INFO     cocotb.phoenix_gpu                 Cycle 63: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   240.00ns INFO     cocotb.phoenix_gpu                 Cycle 64: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   242.00ns INFO     cocotb.phoenix_gpu                 Cycle 65: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   244.00ns INFO     cocotb.phoenix_gpu                 Cycle 66: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   246.00ns INFO     cocotb.phoenix_gpu                 Cycle 67: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   248.00ns INFO     cocotb.phoenix_gpu                 Cycle 68: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   250.00ns INFO     cocotb.phoenix_gpu                 Cycle 69: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   252.00ns INFO     cocotb.phoenix_gpu                 Cycle 70: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   254.00ns INFO     cocotb.phoenix_gpu                 Cycle 71: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   256.00ns INFO     cocotb.phoenix_gpu                 Cycle 72: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   258.00ns INFO     cocotb.phoenix_gpu                 Cycle 73: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   260.00ns INFO     cocotb.phoenix_gpu                 Cycle 74: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   262.00ns INFO     cocotb.phoenix_gpu                 Cycle 75: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   264.00ns INFO     cocotb.phoenix_gpu                 Cycle 76: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   266.00ns INFO     cocotb.phoenix_gpu                 Cycle 77: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   268.00ns INFO     cocotb.phoenix_gpu                 Cycle 78: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   270.00ns INFO     cocotb.phoenix_gpu                 Cycle 79: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   272.00ns INFO     cocotb.phoenix_gpu                 Cycle 80: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   274.00ns INFO     cocotb.phoenix_gpu                 Cycle 81: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   276.00ns INFO     cocotb.phoenix_gpu                 Cycle 82: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   278.00ns INFO     cocotb.phoenix_gpu                 Cycle 83: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   280.00ns INFO     cocotb.phoenix_gpu                 Cycle 84: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   282.00ns INFO     cocotb.phoenix_gpu                 Cycle 85: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   284.00ns INFO     cocotb.phoenix_gpu                 Cycle 86: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   286.00ns INFO     cocotb.phoenix_gpu                 Cycle 87: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   288.00ns INFO     cocotb.phoenix_gpu                 Cycle 88: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   290.00ns INFO     cocotb.phoenix_gpu                 Cycle 89: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   292.00ns INFO     cocotb.phoenix_gpu                 Cycle 90: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   294.00ns INFO     cocotb.phoenix_gpu                 Cycle 91: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   296.00ns INFO     cocotb.phoenix_gpu                 Cycle 92: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   298.00ns INFO     cocotb.phoenix_gpu                 Cycle 93: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   300.00ns INFO     cocotb.phoenix_gpu                 Cycle 94: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   302.00ns INFO     cocotb.phoenix_gpu                 Cycle 95: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   304.00ns INFO     cocotb.phoenix_gpu                 Cycle 96: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   306.00ns INFO     cocotb.phoenix_gpu                 Cycle 97: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   308.00ns INFO     cocotb.phoenix_gpu                 Cycle 98: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   310.00ns INFO     cocotb.phoenix_gpu                 Cycle 99: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   312.00ns INFO     cocotb.phoenix_gpu                 Cycle 100: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   314.00ns INFO     cocotb.phoenix_gpu                 Cycle 101: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   316.00ns INFO     cocotb.phoenix_gpu                 Cycle 102: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   318.00ns INFO     cocotb.phoenix_gpu                 Cycle 103: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   320.00ns INFO     cocotb.phoenix_gpu                 Cycle 104: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   322.00ns INFO     cocotb.phoenix_gpu                 Cycle 105: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   324.00ns INFO     cocotb.phoenix_gpu                 Cycle 106: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   326.00ns INFO     cocotb.phoenix_gpu                 Cycle 107: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   328.00ns INFO     cocotb.phoenix_gpu                 Cycle 108: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   330.00ns INFO     cocotb.phoenix_gpu                 Cycle 109: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   332.00ns INFO     cocotb.phoenix_gpu                 Cycle 110: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   334.00ns INFO     cocotb.phoenix_gpu                 Cycle 111: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   336.00ns INFO     cocotb.phoenix_gpu                 Cycle 112: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   338.00ns INFO     cocotb.phoenix_gpu                 Cycle 113: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   340.00ns INFO     cocotb.phoenix_gpu                 Cycle 114: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   342.00ns INFO     cocotb.phoenix_gpu                 Cycle 115: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   344.00ns INFO     cocotb.phoenix_gpu                 Cycle 116: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   346.00ns INFO     cocotb.phoenix_gpu                 Cycle 117: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   348.00ns INFO     cocotb.phoenix_gpu                 Cycle 118: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   350.00ns INFO     cocotb.phoenix_gpu                 Cycle 119: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   352.00ns INFO     cocotb.phoenix_gpu                 Cycle 120: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   354.00ns INFO     cocotb.phoenix_gpu                 Cycle 121: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   356.00ns INFO     cocotb.phoenix_gpu                 Cycle 122: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   358.00ns INFO     cocotb.phoenix_gpu                 Cycle 123: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   360.00ns INFO     cocotb.phoenix_gpu                 Cycle 124: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   362.00ns INFO     cocotb.phoenix_gpu                 Cycle 125: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   364.00ns INFO     cocotb.phoenix_gpu                 Cycle 126: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   366.00ns INFO     cocotb.phoenix_gpu                 Cycle 127: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   368.00ns INFO     cocotb.phoenix_gpu                 Cycle 128: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   370.00ns INFO     cocotb.phoenix_gpu                 Cycle 129: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   372.00ns INFO     cocotb.phoenix_gpu                 Cycle 130: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   374.00ns INFO     cocotb.phoenix_gpu                 Cycle 131: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   376.00ns INFO     cocotb.phoenix_gpu                 Cycle 132: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   378.00ns INFO     cocotb.phoenix_gpu                 Cycle 133: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   380.00ns INFO     cocotb.phoenix_gpu                 Cycle 134: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   382.00ns INFO     cocotb.phoenix_gpu                 Cycle 135: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   384.00ns INFO     cocotb.phoenix_gpu                 Cycle 136: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   386.00ns INFO     cocotb.phoenix_gpu                 Cycle 137: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   388.00ns INFO     cocotb.phoenix_gpu                 Cycle 138: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   390.00ns INFO     cocotb.phoenix_gpu                 Cycle 139: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   392.00ns INFO     cocotb.phoenix_gpu                 Cycle 140: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   394.00ns INFO     cocotb.phoenix_gpu                 Cycle 141: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   396.00ns INFO     cocotb.phoenix_gpu                 Cycle 142: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   398.00ns INFO     cocotb.phoenix_gpu                 Cycle 143: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   400.00ns INFO     cocotb.phoenix_gpu                 Cycle 144: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   402.00ns INFO     cocotb.phoenix_gpu                 Cycle 145: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   404.00ns INFO     cocotb.phoenix_gpu                 Cycle 146: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   406.00ns INFO     cocotb.phoenix_gpu                 Cycle 147: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   408.00ns INFO     cocotb.phoenix_gpu                 Cycle 148: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   410.00ns INFO     cocotb.phoenix_gpu                 Cycle 149: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   412.00ns INFO     cocotb.phoenix_gpu                 Cycle 150: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   414.00ns INFO     cocotb.phoenix_gpu                 Cycle 151: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   416.00ns INFO     cocotb.phoenix_gpu                 Cycle 152: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   418.00ns INFO     cocotb.phoenix_gpu                 Cycle 153: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   420.00ns INFO     cocotb.phoenix_gpu                 Cycle 154: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   422.00ns INFO     cocotb.phoenix_gpu                 Cycle 155: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   424.00ns INFO     cocotb.phoenix_gpu                 Cycle 156: all_warps_done=0 sm_busy=1 block_done=0 warp0=100
+   426.00ns INFO     cocotb.phoenix_gpu                 Cycle 157: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   428.00ns INFO     cocotb.phoenix_gpu                 Cycle 158: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   430.00ns INFO     cocotb.phoenix_gpu                 Cycle 159: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   432.00ns INFO     cocotb.phoenix_gpu                 Cycle 160: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   434.00ns INFO     cocotb.phoenix_gpu                 Cycle 161: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   436.00ns INFO     cocotb.phoenix_gpu                 Cycle 162: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   438.00ns INFO     cocotb.phoenix_gpu                 Cycle 163: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   440.00ns INFO     cocotb.phoenix_gpu                 Cycle 164: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   442.00ns INFO     cocotb.phoenix_gpu                 Cycle 165: all_warps_done=0 sm_busy=1 block_done=0 warp0=001
+   444.00ns INFO     cocotb.phoenix_gpu                 Cycle 166: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   446.00ns INFO     cocotb.phoenix_gpu                 Cycle 167: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   448.00ns INFO     cocotb.phoenix_gpu                 Cycle 168: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   450.00ns INFO     cocotb.phoenix_gpu                 Cycle 169: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   452.00ns INFO     cocotb.phoenix_gpu                 Cycle 170: all_warps_done=0 sm_busy=1 block_done=0 warp0=010
+   454.00ns INFO     cocotb.phoenix_gpu                 Cycle 171: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+   456.00ns INFO     cocotb.phoenix_gpu                 Cycle 172: all_warps_done=1 sm_busy=0 block_done=1 warp0=101
+   458.00ns INFO     cocotb.phoenix_gpu                 Cycle 173: all_warps_done=1 sm_busy=0 block_done=0 warp0=101
+   460.00ns INFO     cocotb.phoenix_gpu                 Completed MatMul in 174 cycles
+   460.00ns INFO     cocotb.phoenix_gpu                 LSU Active: 0 cycles (0.0%)
+   460.00ns INFO     cocotb.phoenix_gpu                 Scheduler Stalled: 140 cycles (80.5%)
+   476.00ns INFO     cocotb.regression                  test_matmul passed
+   476.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test.kernels.test_matmul.test_matmul   PASS         476.00           0.17       2857.53  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        476.00           0.22       2157.29  **
+                                                        **********************************************************************************************
+                                                        
+nals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.lsu.$ivl_for_loop5.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.regfile.$ivl_for_loop9.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.sfu.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop26.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop27.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.warp_sched.$ivl_for_loop28.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop29.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop30.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop31.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop32.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.sms[3].sm_inst.$ivl_for_loop33.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.dispatcher.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.dispatcher.$ivl_for_loop34.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.dispatcher.$ivl_for_loop35.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop39.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop40.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop41.
+FST warning: ignoring signals in previously scanned scope phoenix_gpu.tiles[1].tile_inst.$ivl_for_loop42.
+make[1]: Leaving directory '/home/rohit/Coding/GPU'

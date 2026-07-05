@@ -1,0 +1,86 @@
+.
+├── docs
+│   ├── 01_vision.md
+│   ├── 02_architecture.md
+│   ├── 03_microarchitecture.md
+│   ├── 04_pipeline.md
+│   ├── 05_memory.md
+│   ├── 06_scheduler.md
+│   ├── 07_tensor_core.md
+│   ├── 08_interconnect.md
+│   ├── 09_runtime.md
+│   ├── 10_isa.md
+│   ├── 11_performance_model.md
+│   └── 12_implementation_plan.md
+├── LICENSE
+├── Makefile
+├── phoenix_xm_report.md
+├── README.md
+├── ROADMAP.md
+├── rtl
+│   ├── cache
+│   │   ├── phoenix_l1_dcache.sv
+│   │   ├── phoenix_l1_icache.sv
+│   │   └── phoenix_l2_cache.sv
+│   ├── fabric
+│   │   ├── phoenix_fabric_router.sv
+│   │   └── phoenix_fabric.sv
+│   ├── memory
+│   │   ├── phoenix_global_mem.sv
+│   │   └── phoenix_mem_controller.sv
+│   ├── phoenix_global_scheduler.sv
+│   ├── phoenix_gpu.sv
+│   ├── pkg
+│   │   └── phoenix_pkg.sv
+│   ├── sm
+│   │   ├── phoenix_alu.sv
+│   │   ├── phoenix_decode.sv
+│   │   ├── phoenix_fetch.sv
+│   │   ├── phoenix_lsu.sv
+│   │   ├── phoenix_regfile.sv
+│   │   ├── phoenix_sfu.sv
+│   │   ├── phoenix_shared_mem.sv
+│   │   ├── phoenix_sm.sv
+│   │   ├── phoenix_tensor_core.sv
+│   │   └── phoenix_warp_scheduler.sv
+│   └── tile
+│       ├── phoenix_dispatcher.sv
+│       ├── phoenix_tile_crossbar.sv
+│       └── phoenix_tile.sv
+├── run_tests.sh
+├── sw
+│   ├── assembler
+│   │   ├── __init__.py
+│   │   └── phoenix_asm.py
+│   ├── __init__.py
+│   └── runtime
+│       ├── __init__.py
+│       └── phoenix_runtime.py
+├── syn
+│   └── synth.ys
+├── test
+│   ├── golden
+│   │   └── gpu_model.py
+│   ├── helpers
+│   │   └── tb_dump.sv
+│   ├── __init__.py
+│   ├── kernels
+│   │   ├── test_divergence.py
+│   │   ├── test_matmul.py
+│   │   ├── test_prefix_sum.py
+│   │   ├── test_reduction.py
+│   │   └── test_vecadd.py
+│   ├── test_vecadd.py
+│   └── unit
+│       ├── test_alu.py
+│       ├── test_decode.py
+│       ├── test_isa_control.py
+│       ├── test_isa_memory.py
+│       ├── test_lsu.py
+│       ├── test_pipeline_hazards.py
+│       ├── test_stress.py
+│       ├── test_tensor_core.py
+│       └── test_warp_scheduler.py
+└── tree.txt
+
+18 directories, 66 files
