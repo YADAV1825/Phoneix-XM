@@ -53,7 +53,6 @@ Dr. B.R. Ambedkar National Institute of Technology (NIT) Jalandhar, India
 ├── LICENSE
 ├── Makefile
 ├── README.md
-├── ROADMAP.md
 ├── rtl
 │   ├── cache
 │   │   ├── phoenix_l1_dcache.sv
@@ -257,9 +256,6 @@ There are three Matrix Multiplication variants because `tiny-gpu` and Phoenix-XM
 - **MatMul (Looped):** Computes the matrix elements using a dynamic loop with branch instructions and index math. This requires the architectures to support branch prediction and resolution. `tiny-gpu` executes this in 491 cycles, while Phoenix-XM takes 870 cycles due to its multi-stage pipeline having to resolve branches dynamically.
 - **Original Comparison Context:** Initially, we compared `tiny-gpu`'s Looped MatMul to Phoenix-XM's Unrolled MatMul, which resulted in a misleading 491 vs 174 cycle count.
 
-## Roadmap
-
-See [ROADMAP.md](ROADMAP.md) for the detailed version progression from v0.1 to v2.0 (Optical Fabric).
 
 ## License
 
